@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>
+        The Case Study
+    </title>
+
+    <!--Linking Files-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--Linking Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <!--Linking Webcam-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1 class="LightBlue">
+            Welcome To TCS
+        </h1>
+        <h2 class="LightBlue">
+            TCS is the platform where you can compare between 'Mobilenet' and 'Azure'
+        </h2>
+        <div class="Orange">
+            <h2>
+                Steps :
+            </h2>
+            <h3>
+                1. Click The Picture
+            </h3>
+            <h3>
+                2. Click The " Check The Object " Button
+            </h3>
+            <h3>
+                3.Compare The Results!
+            </h3>
+        </div>
+        <button id="Cam" class="Blue" onclick="Pic()"> 1. Click The Picture</button>
+        <br><br>
+        <div id="Webcam"></div>
+        <br><br><br>
+        <button id="Chk" class="Brown" onclick="Check()"> 2. Check The Object</button>
+        <br><br>
+        <div id="ObjectPic"></div>
+        <br><br><br>
+        <button id="Cmp"> 3. Compare The Results</button>
+        <br><br>
+        <div id="Result">
+            <span>
+                <h2>Result Given By</h2>
+                <h1>Mobilenet</h1>
+                <h3 id = "Mobilenet"></h3>
+            </span> &nbsp; &nbsp;
+            <p id = "vs" class="White">VS</p>
+            &nbsp; &nbsp;
+            <span>
+                <h2>Result Given By</h2>
+                <h1>Azure</h1>
+                <h3 id="azure"></h3>
+            </span>
+        </div>
+
+    </center>
+    <!--Linking Js (Because of webcam)-->
+    <script src="main.js"></script>
+</body>
+
+</html>
