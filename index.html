@@ -16,10 +16,17 @@
     <!--Linking Webcam-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <!--Linking Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <center>
+        <div id = "texts">
         <h1 class="LightBlue">
             Welcome To TCS
         </h1>
@@ -46,7 +53,7 @@
         <br><br><br>
         <button id="Chk" class="Brown" onclick="Check()"> 2. Check The Object</button>
         <br><br>
-        <div id="ObjectPic"></div>
+        <div id="ObjectPic"><img src="Coin.JPG"></div>
         <br><br><br>
         <button id="Cmp"> 3. Compare The Results</button>
         <br><br>
@@ -64,6 +71,38 @@
                 <h3 id="azure"></h3>
             </span>
         </div>
+<br><br>
+        <button type="button" data-toggle="modal" data-target="#T1" class="response tests">
+           Test-1
+          </button>
+  <div id="T1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <img src="Coin.JPG" class="imgs">
+              <div class="modal-footer">
+                  <H3 class="tests">Microsoft Azure Says "A Fabric Surface"</H3>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <button type="button" data-toggle="modal" data-target="#T2" class="response tests">
+    Test-2
+   </button>
+<div id="T2" class="modal fade" role="dialog">
+<div class="modal-dialog">
+   <div class="modal-content">
+       <img src="Headphones.JPG" class="imgs">
+       <div class="modal-footer">
+           <H3 class="tests">Microsoft Azure Says "A Pair of headphones on a table"</H3>
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+   </div>
+
+</div>
+</div>
+  </div>
 
     </center>
     <!--Linking Js (Because of webcam)-->

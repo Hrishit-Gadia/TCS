@@ -1,5 +1,3 @@
-//Variables
-var XYZ;
 //Setting Webcam
 Webcam.set({
 

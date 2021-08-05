@@ -1,4 +1,4 @@
-body{
+#texts{
     background-color : black;
     color: white;
     font-family: 'Shadows Into Light', cursive;
@@ -84,4 +84,20 @@ body{
 
 .Brown{
     color: brown;
+}
+
+#ObjectPic img{
+    width : 500px;
+}
+
+.imgs{
+    width : 250px;
+}
+
+.tests{
+    color: black;
+}
+
+.tests Button{
+display: inline-block;
 }
