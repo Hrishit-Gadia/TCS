@@ -1,103 +1,29 @@
-#texts{
-    background-color : black;
-    color: white;
-    font-family: 'Shadows Into Light', cursive;
+Body{
+    background-image: url('Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
 }
 
-#Webcam{
-    height: 500px;
-    background-color: lightcoral;
-    border-radius: 25px;
-}
-
-.LightBlue{
-    color: lightblue;
-}
-
-.Orange{
-    color: orange;
-}
-
-.Blue{
-    color: blue;
-}
-
-#Cam{
-    background-color: lightcoral;
+#Logo {
+    background-image: url('Black-Stroke.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 200px;
-    border-radius: 7px;
-    font-size: 20px;
-    border : none;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: 250;
+    color : orange;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-#Chk{
-    background-color: lightskyblue;
-    width: 200px;
-    border-radius: 7px;
-    font-size: 20px;
-    border : none;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: 250;
+#Pics {
+    border: orange solid ;
 }
 
-.OrangedRed{
-    color: orangered;
-}
-
-#ObjectPic{
-    height: 400px;
-    width: 750px;
-    background-color: lightskyblue;
-    border-radius: 25px;
-}
-
-#Result span, #vs{
-    display: inline-block;
-}
-
-#Result {
-    background-color: orange;
-    border-radius: 25px;
-    color: black;
-    width: 50%;
-}
-
-#vs {
-    font-size: 75px;
-}
-
-#Cmp{
-    background-color: orange;
-    width: 200px;
-    border-radius: 7px;
-    font-size: 20px;
-    border : none;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: 250;
-}
-
-.White{
-    color: white;
-}
-
-.Brown{
-    color: brown;
-}
-
-#ObjectPic img{
-    width : 500px;
-}
-
-.imgs{
-    width : 250px;
-}
-
-.tests{
-    color: black;
-}
-
-.tests Button{
-display: inline-block;
+#Win {
+    background-color: black;
+    width:fit-content;
+    color: wheat;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }

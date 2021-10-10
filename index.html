@@ -1,127 +1,68 @@
-<html>
+<Html>
 
-<head>
-    <title>
+<Head>
+    <Title>
         The Case Study
-    </title>
+    </Title>
+    <!--Links-->
 
-    <!--Linking Files-->
-    <link href="style.css" rel="stylesheet">
+    <!--Files-->
+    <Link rel="stylesheet" href="style.css">
 
-    <!--Linking Google Fonts-->
+    <!--Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</Head>
 
-    <!--Linking Webcam-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-
-    <!--Linking Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-    <center>
-        <div id = "texts">
-        <h1 class="LightBlue">
-            Welcome To TCS
-        </h1>
-        <h2 class="LightBlue">
-            TCS is the platform where you can compare between 'Mobilenet' and 'Azure'
-        </h2>
-        <div class="Orange">
-            <h2>
-                Steps :
-            </h2>
-            <h3>
-                1. Click The Picture
-            </h3>
-            <h3>
-                2. Click The " Check The Object " Button
-            </h3>
-            <h3>
-                3.Compare The Results!
-            </h3>
-        </div>
-        <button id="Cam" class="Blue" onclick="Pic()"> 1. Click The Picture</button>
-        <br><br>
-        <div id="Webcam"></div>
-        <br><br><br>
-        <button id="Chk" class="Brown" onclick="Check()"> 2. Check The Object</button>
-        <br><br>
-        <div id="ObjectPic"></div>
-        <br><br><br>
-        <button id="Cmp"> 3. Compare The Results</button>
-        <br><br>
-        <div id="Result">
-            <span>
-                <h2>Result Given By</h2>
-                <h1>Mobilenet</h1>
-                <h3 id = "Mobilenet"></h3>
-            </span> &nbsp; &nbsp;
-            <p id = "vs" class="White">VS</p>
-            &nbsp; &nbsp;
-            <span>
-                <h2>Result Given By</h2>
-                <h1>Azure</h1>
-                <h3 id="azure"></h3>
-            </span>
-        </div>
-<br><br>
-        <button type="button" data-toggle="modal" data-target="#T1" class="response tests">
-           Test-1
-          </button>
-  <div id="T1" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <img src="KeyPad.JPG" class="imgs">
-              <div class="modal-footer">
-                  <H3 class="tests">Microsoft Azure Says "A Close Up Of A Keyboard"</H3>
-                  <H3 class="tests">Mobilenet Says "Computer Keyboard, Keypad"</H3>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+<Body>
+    <Center>
+    <div class="container">
+        <h2 id = "Logo">TCS</h2>  
+        <h2 id = "win">Overoll Winner : Google Lens</h2>  
+        <div id="TestImage" class="carousel slide" data-ride="carousel" id="Pics">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#TestImage" data-slide-to="0" class="active"></li>
+            <li data-target="#TestImage" data-slide-to="1"></li>
+            <li data-target="#TestImage" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="Copy of Copy of coin.png" alt="chess" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="Copy of coin.png" alt="Ipod" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="coin.png" alt="Coin" style="width:100%;">
+            </div>
           </div>
-
+      
+          <!-- Left and ri
+            ght controls -->
+          <a class="left carousel-control" href="#TestImage" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#TestImage" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-  </div>
-  <button type="button" data-toggle="modal" data-target="#T2" class="response tests">
-    Test-2
-   </button>
-<div id="T2" class="modal fade" role="dialog">
-<div class="modal-dialog">
-   <div class="modal-content">
-       <img src="Mouse.JPG" class="imgs">
-       <div class="modal-footer">
-           <H3 class="tests">Microsoft Azure Says "A Computer mouse on A table"</H3>
-           <H3 class="tests">Mobilenet Says "mouse, Computer mouse"</H3>
-           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       </div>
-   </div>
-   </div>
-   </div>
-   <br>
-   <button type="button" data-toggle="modal" data-target="#T3" class="response tests">
-  Result
-   </button>
-<div id="T3" class="modal fade" role="dialog">
-<div class="modal-dialog">
-   <div class="modal-content">
-       <div class="modal-footer">
-           <H3 class="tests">I have done 2 tests in which "microsoft Azure was more accurate</H3>
-           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       </div>
-   </div>
+      </Center>
+</Body>
 
-</div>
-  </div>
-
-    </center>
-    <!--Linking Js (Because of webcam)-->
-    <script src="main.js"></script>
-</body>
-
-</html>
+</Html>
